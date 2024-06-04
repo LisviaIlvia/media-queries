@@ -1,0 +1,66 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: "Josefin Sans", sans-serif;
+}
+nav{
+    background-color: black;
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav li{
+    list-style-type: none;
+}
+.intestazione{
+    min-height: 100vh;
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100%;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 7px;
+    color: white;
+}
+.products{
+    font-size: 35px;
+    text-decoration: underline dashed;
+}
+footer{
+    height: 25vh;
+    background-color: black;
+    color: white;
+}
+
+/* Media Queries */
+/* Sono Keywords */
+/* Se ho iniziato a scrivere Css pensando a schermi grandi allora penserò alle media queries per schermi piccoli */
+
+/* per ogni schermo che arriva massimo a questa larghezza fai questo: */
+@media screen and (max-width: 600px){
+
+    .intestazione{
+        min-height: 50vh;
+    }
+
+    h1{
+       font-size: 30px ; 
+    }
+
+}
+
+/*Se invece sono partita da schermi piccoli faccio l'inverso 
+@media screen and (min-width: 1000px){
+
+    .intestazione{
+        min-height: 100vh;
+    }
+
+}*/
